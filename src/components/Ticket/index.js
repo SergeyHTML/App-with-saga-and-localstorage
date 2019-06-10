@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 function Ticket(props) {
 
@@ -14,5 +15,9 @@ function Ticket(props) {
         </div>
     )
 }
+
+Ticket.propTypes = {
+    data: PropTypes.object.isRequired
+};
 
 export default Ticket;

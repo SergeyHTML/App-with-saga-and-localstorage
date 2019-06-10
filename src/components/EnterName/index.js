@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import PropTypes from 'prop-types'
 import './style.scss'
 
 function EnterName(props) {
@@ -30,5 +31,9 @@ function EnterName(props) {
     )
 
 }
+
+EnterName.propTypes ={
+    onEnter: PropTypes.func
+};
 
 export default EnterName

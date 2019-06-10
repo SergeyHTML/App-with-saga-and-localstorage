@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 import './style.scss'
 import Select from 'react-select'
 import {connect} from 'react-redux'
@@ -8,6 +9,12 @@ import Loading from '../Loading'
 import Ticket from '../Ticket'
 
 class CurrenciesPage extends Component{
+
+    static propTypes = {
+        name: PropTypes.string.isRequired,
+        currencies: PropTypes.array.isRequired,
+        ticket: PropTypes.object
+    };
 
     constructor(props) {
         super(props);

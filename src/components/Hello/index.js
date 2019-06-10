@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function Hello(props) {
     const {name} = props;
@@ -11,3 +12,7 @@ export default function Hello(props) {
         </div>
     )
 }
+
+Hello.propTypes = {
+    name: PropTypes.string.isRequired
+};
